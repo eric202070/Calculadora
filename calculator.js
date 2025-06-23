@@ -4,7 +4,8 @@ let alertShown = false;
 const butao = document.querySelectorAll("input[type='button']");
 const registros = document.querySelector("#Registros");
 let tomate;
-let rucula
+let rucula;
+let jenifer;
 select();
 // function calc() {select()
 //   eval(document.querySelector("#Show").value);
@@ -124,7 +125,7 @@ function select() {
             const perma = document.querySelector("#Show").value;
             if (document.querySelector("#Show").value.indexOf("%") == -1) {
               if (document.querySelector("#Show").value.indexOf("²") == -1) {
-                const jenifer = eval(document.querySelector("#Show").value);
+                jenifer = eval(document.querySelector("#Show").value);
                 if (isFloat(jenifer)) {
                   const roberto = jenifer.toFixed(2);
                   rucula = (document.querySelector("#Show").value =
@@ -222,7 +223,9 @@ function select() {
               }
             }
 
-            if(tomate == 123 || rucula == 123){
+            if(tomate == 123 || rucula == 123 || jenifer == 123){
+              registroCalc.classList.remove('yas')
+              registroCalc.classList.remove('happy')
               registroCalc.classList.add('rude')
             }
             console.log(rucula)
@@ -257,7 +260,7 @@ function select() {
             const perma = document.querySelector("#Show").value;
             if (document.querySelector("#Show").value.indexOf("%") == -1) {
               if (document.querySelector("#Show").value.indexOf("²") == -1) {
-                const jenifer = eval(document.querySelector("#Show").value);
+                jenifer = eval(document.querySelector("#Show").value);
                 if (isFloat(jenifer)) {
                   const roberto = jenifer.toFixed(2);
                   rucula = (document.querySelector("#Show").value =
