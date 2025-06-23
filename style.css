@@ -1,0 +1,460 @@
+  body {
+  background: linear-gradient(
+    128deg,
+    rgba(92, 92, 92, 0.556) 0%,
+    rgb(38, 38, 38) 38%,
+    rgb(0, 0, 0) 60%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  background-size: 400% 400%;
+}
+body.darkmode {
+  animation: darkcolor 1s ease-in-out forwards;
+}
+body.lightmode {
+  animation: lightcolor 1s ease-in-out forwards;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-size: 400% 400%;
+  background: rgba(62, 62, 62, 0.49);
+  animation: backani 1s ease-in-out alternate infinite;
+  border-radius: 40px;
+  border: ridge 2px
+    linear-gradient(
+      128deg,
+      rgb(255, 255, 255) 0%,
+      rgb(71, 71, 71) 20%,
+      rgb(0, 0, 0) 50%,
+      rgb(0, 0, 0) 50%,
+      rgb(0, 0, 0) 50%,
+      rgb(0, 0, 0) 50%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 98vh;
+  width: 98vw;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@keyframes opensite {
+  from {
+    opacity: 0;
+    transform: scale(5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.bx.bx-chevron-down.animation {
+  animation: arrow 1s ease-in-out alternate infinite;
+}
+
+@keyframes arrow {
+  from {
+    transform: translate(0, -1px);
+  }
+  to {
+    transform: translate(0, 1px);
+  }
+}
+.turn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  justify-content: center;
+}
+.turn.todown {
+  animation: todown 0.5s ease-in-out forwards;
+}
+.turn.toup {
+  animation: toup 0.5s ease-in-out forwards;
+}
+@keyframes todown {
+  to {
+    transform: translate(-50%, 17rem);
+  }
+}
+@keyframes toup {
+  from {
+    transform: translate(-50%, 17rem);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+.box {
+  position: relative;
+  background-color: aliceblue;
+  height: 4rem;
+  width: 12rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px black;
+}
+.itembox {
+  font-size: 3rem;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50px;
+  transform: translate(0);
+  position: relative;
+}
+.itembox.light.open {
+  animation: lest 1s ease-in-out forwards;
+}
+.itembox.light {
+  background-color: transparent;
+}
+.itembox.dark {
+  display: none;
+  opacity: 0;
+  background-color: transparent;
+  color: white;
+}
+.itembox.dark.open {
+  animation: oest 1s ease-in-out forwards;
+  opacity: 1;
+}
+.box.darkopen {
+  background-color: black;
+  transition: 0.5s;
+}
+.box.lightopen {
+  background-color: white;
+  transition: 0.5s;
+}
+.itembox.dark.darkopen {
+  animation: opendark 1s ease-in-out forwards;
+  opacity: 0;
+}
+.itembox.light.lightopen {
+  animation: lightopen 1s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes lightopen {
+  0% {
+    transform: translate(8rem);
+  }
+  50% {
+    transition: 0.3s;
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  100% {
+    transition: 0.3s;
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes opendark {
+  0% {
+    transform: translate(-8rem);
+  }
+  50% {
+    transition: 0.3s;
+    transform: translate(0);
+    opacity: 1;
+  }
+
+  100% {
+    transition: 0.3s;
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes lest {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transition: 0.3s;
+    transform: translate(8rem);
+    opacity: 0;
+  }
+
+  100% {
+    transition: 0.3s;
+    transform: translate(8rem);
+    opacity: 0;
+  }
+}
+@keyframes oest {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transition: 0.3s;
+    transform: translate(-8rem);
+    opacity: 0;
+  }
+
+  100% {
+    transition: 0.3s;
+    transform: translate(-8rem);
+    opacity: 0;
+  }
+}
+
+.registros-de-entrada {
+  background-color: aliceblue;
+  width: 26%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  box-shadow: 0 7px 20px black;
+
+}
+.titulo-h2o {
+  width: 100%;
+  text-align: center;
+  height: 5vh;
+  position: relative;
+  top: 1vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 2rem;
+}
+.jenifer {
+  position: absolute;
+  margin-top: 20px;
+  height: 90%;
+  overflow: auto;
+  padding-top: 2rem;
+}
+.jenifer::-webkit-scrollbar {
+  width: 9px;
+  height: 70px; /* width of the entire scrollbar */
+}
+.jenifer::-webkit-scrollbar-button {
+  width: 9px;
+  height: 70px;
+  border-radius: 50%; /* width of the entire scrollbar */
+}
+
+.jenifer::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+.jenifer::-webkit-scrollbar-thumb {
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid white; /* color of the tracking area */
+}
+.rde {
+  position: relative;
+  width: 90%;
+  height: 50%;
+  margin: 25px auto 25px auto;
+  letter-spacing: 1.5px;
+}
+.limpar-registro {
+  text-align: center;
+  height: 3vh;
+  width: 100%;
+  margin-bottom: 2%;
+  bottom: 0;
+  color: #d3c6aa;
+}
+.limpar:hover {
+  color: #88806e;
+  cursor: pointer;
+}
+.registros-de-entrada.darkmode,
+.titulo-h2o.darkmode,
+.rde.darkmode {
+  background-color: black;
+  transition: 1s;
+  color: #d3c6aa;
+}
+.registros-de-entrada.lightmode,
+.titulo-h2o.lightmode,
+.rde.lightmode {
+  background-color: aliceblue;
+  transition: 1s;
+  color: #d3c6aa;
+}
+
+.registros-de-entrada::-webkit-scrollbar {
+  width: 9px;
+  height: 70px; /* width of the entire scrollbar */
+}
+.registros-de-entrada::-webkit-scrollbar-button {
+  width: 9px;
+  height: 70px; /* width of the entire scrollbar */
+}
+
+.registros-de-entrada::-webkit-scrollbar-track {
+  background: white;
+  /* color of the tracking area */
+}
+.registros-de-entrada::-webkit-scrollbar-thumb {
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid white; /* color of the tracking area */
+}
+
+.calculator {
+  position: relative;
+  background-color: aliceblue;
+  border: 1px ridge #bab3b3;
+  width: 26%;
+  height: 75%;
+  border-radius: 40px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 0 3px 20px black;
+}
+
+.calculator.lightmode {
+  background-color: aliceblue;
+  border: 1px ridge #bab3b3;
+  transition: 1s;
+}
+.form-calculator {
+  position: relative;
+}
+.col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4% 4%;
+  text-align: center;
+}
+.inputs {
+  margin-top: 4%;
+  background-color: aliceblue;
+  outline: none;
+  border: none;
+  /* box-shadow: -6px 3px 20px black; */
+  border-radius: 40px;
+  height: 8vh;
+  width: 6vw;
+  text-align: center;
+  /* height: 6rem;
+  width: 6rem; */
+}
+.buttan {
+  font-size: 2rem;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.buttan.text {
+  font-size: 2rem;
+  outline: none;
+  border: none;
+}
+.inputs .buttan {
+  border-radius: 40px;
+  background-color: aliceblue;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.texto {
+  background-color: aliceblue;
+  color: black;
+  height: 14vh;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 24vw;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+.inputs:hover,
+.inputs .buttan:hover {
+  transition: 0.2s;
+  background-color: #e7e7e7;
+}
+.inputs:active {
+  transition: 0.2s;
+  box-shadow: none;
+  transform: scale(0.9);
+  background-color: #b4b4b4;
+}
+.input {
+  color: black;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  border-radius: 40px;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  margin: 0.5rem 0.5rem;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-align: right;
+}
+.input::-webkit-scrollbar {
+  width: 9px; /* width of the entire scrollbar */
+}
+
+.input::-webkit-scrollbar-track {
+  background: black; /* color of the tracking area */
+}
+.input::-webkit-scrollbar-thumb {
+  background-color: aliceblue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid black; /* color of the tracking area */
+}
+.input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.input::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+}
+
+.calculator.darkmode,
+.inputs.darkmode,
+.buttan.darkmode,
+.texto.darkmode {
+  background-color: black;
+  border: none;
+  transition: 1s;
+}
+.calculator.lightmode,
+.inputs.lightmode,
+.buttan.lightmode,
+.texto.lightmode {
+  background-color: aliceblue;
+  transition: 1s;
+}

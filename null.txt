@@ -1,0 +1,23 @@
+ <div class="null">
+                        <div class="menu"><i class="bx bx-chevron-down animation"></i>
+                        </div>
+                        <div class="menu-oculto">
+                                <nav class="menu-nav-vertical">
+                                        <ul class="ul-nav">
+                                                <li class="menu-item"><a href="../Portifolio/index.html" title="ancoras"
+                                                                class="menu-ancora">Home</a></li>
+                                                <li class="menu-item"><a href="#" title="ancoras"
+                                                                class="menu-ancora">Projetos
+                                                                Pequenos</a></li>
+                                                <li class="menu-item"><a href="#" title="ancoras"
+                                                                class="menu-ancora">Projetos
+                                                                Grandes</a></li>
+                                                <li class="menu-item"><a href="#" title="ancoras"
+                                                                class="menu-ancora">Outros
+                                                                Projetos</a></li>
+                                                <li class="menu-item"><a href="#" title="ancoras"
+                                                                class="menu-ancora">Contato</a></li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </div>

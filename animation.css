@@ -1,0 +1,39 @@
+.calculator{
+  position: absolute;
+  z-index: 2;
+  transition: 0.4s ease-in-out;
+}
+
+.calculator:hover{
+  transform-origin: center;
+  transform: rotate(-10deg);
+}
+.calculator:hover ~ .registros-de-entrada{
+  transition: 0.4s ease-in-out;
+  transform-origin: center;
+  transform: rotate(10deg);
+}
+.calculator:not(hover) ~ .registros-de-entrada{
+  transition: 0.4s ease-in-out;
+  transform-origin: center;
+  transform: rotate(0);
+}
+.calculator:not(hover) ~ .registros-de-entrada.yas{
+  transition: 0.4s ease-in-out;
+  transform-origin: center;
+  transform: rotate(10deg);
+}
+
+.registros-de-entrada.yas:hover {
+  transform: rotate(20deg) !important;
+}
+.registros-de-entrada.yas.rude{
+  transform-origin: right center !important;
+  transform: rotate(20deg) translateX(100%) !important;
+}
+.registros-de-entrada.yas.happy{
+  transform-origin: center !important;
+  transform: rotate(20deg) translateX(0) !important;
+}
+
+
